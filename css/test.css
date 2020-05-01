@@ -1,0 +1,412 @@
+html,body{
+	padding: 0;
+	margin:5px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo{
+	height:40px;
+	margin-top: 5px;
+	margin-left: -30px;
+}
+
+
+
+.gravatar{
+	border-radius:50%;
+	width:40px;
+	height:40px;
+  margin:auto 3px;
+}
+
+.icons{
+  font-size:25px;
+  color:whitesmoke;
+  margin-top:5px;
+  margin-left:15px;
+}
+
+
+.iconName{
+	color:whitesmoke;
+  /* background-color:#6094B4; */
+  border-radius: 30px;
+  margin-left:15px;
+  padding: 2px 5px;
+  margin-top:3px;
+  margin-bottom:5px;
+
+}
+
+
+
+#dropdown{
+	color:whitesmoke;
+}
+
+	#terminal{
+		height:370px;
+		background-color:#282A2E;
+		transition: 0.2s;
+		overflow: scroll;
+		color:#69EC77;
+		width:97%;
+	}
+
+
+	#minimize,#maximize,#close{
+		color:black;
+		margin:5px;
+		font-size:18px;
+	}
+
+	#terminal_icons{
+		width:97%;
+		height:40px;
+		background-color: whitesmoke;
+
+	}
+
+
+.inputSection,#histogram,.resultSection{
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px 5px #e6e6e6;
+	height:300px;
+	margin:10px;
+  margin-top:5px;
+	display: inline-block;
+
+}
+
+#tweetStorm{
+  width:200px;
+  height:200px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+
+.preprocessing{
+	height:40px;
+	margin:15px 0 15px 25px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 2px 2px #e6e6e6;
+	height:50px;
+	padding:5px;
+	border-radius: 10px;
+}
+
+#showPreprocessErrors,#warning{
+	color:red;
+  background-color: black;
+  z-index: 999;
+}
+
+.myProgress {
+  width: 90%;
+  border:1px solid #E24E24;
+  border-radius:30px;
+  margin:5px;
+
+}
+
+.myBar {
+  width: 1%;
+  height: 7px;
+  background-color:#E24E24;
+  border-radius:30px;
+}
+
+.done{
+	font-size: 25px;
+	color:green;
+	margin-top:20px;
+}
+
+
+
+/* Spinner style goes here*/
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5,1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0375B4;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner{
+	display:none;
+  margin-left:7px;
+  width:50px;
+  height:50px;
+
+}
+
+
+input[type='file']{
+	background-color: black;
+	color:whitesmoke;
+	font-size:12px;
+	width:200px;
+
+}
+/* spinner ends here */
+
+
+#wing1{
+	 	 	transform-origin:center;
+	 	 	animation: flap 0.6s ease-out infinite alternate;
+	 	}
+#wing2{
+	 	 	transform-origin:center;
+	 	 	animation: flap 0.6s ease-in infinite alternate;
+	 	}
+@keyframes flap{
+	 		50%{
+	 	 	transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+
+	 		}
+
+	 	}
+
+	svg{
+	width:40px;
+	height:40px;
+	}
+
+.spaceBetweenRows{
+	margin-top:10px;
+}
+
+
+
+
+/* snackbar */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color:whitesmoke;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+/* snackbar ends here */
+
+
+.sidebar{
+  position: fixed;
+  height:100%;
+  width:50px;
+  background-color: black;
+    right:0;
+    top:0;
+    z-index: 1;
+}
+
+.sidebar:hover{
+  width:20%;
+  transition: .5s ease;
+}
+
+.insideSidebar{
+  cursor: pointer;
+}
+
+
+.insideSidebar{
+  display:inline-flex;
+  width:100%;
+
+}
+
+.content{
+  position: fixed;
+  left:25%;
+  top: 30px;
+  width:50%;
+  height:68%;
+  color:whitesmoke;
+  text-align: center;
+  border-radius: 2px;
+  z-index: 1;
+  background-color: #ffffff;
+	box-shadow: 2px 2px 2px 2px #e6e6e6;
+  animation:fadein 0.2s;
+}
+
+#content-editor{
+  position:relative;
+  top:5%;
+}
+
+#closeContentEditor{
+  float: right;
+  font-size:25px;
+  color:black;
+  margin:3px;
+}
+
+.btn{
+  font-size:11px;
+}
+
+#showPath{
+	font-size: 12px;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+#executionTime{
+  color: whitesmoke;
+  background-color: black;
+  z-index:999;
+}
+
+#resultImg{
+  width:200px;
+  height:180px;
+  position:relative;
+  left:30%;
+}
+
+.resultSection{
+  text-align: 'center';
+}
+
+#randomForestResult,#svmResult{
+  font-size:11px;
+}
+
+#testing{
+  width:195px;
+  height:195px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+#processingTestTweet,#classifying{
+  font-size:20px;
+  position: relative;
+  left:25%;
+  top:10px;
+  background-color: black;
+  color:whitesmoke;
+}
